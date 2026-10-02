@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tom Fattah — Artist</title>
+    <meta name="description" content="Portfolio of Tom Fattah." />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <meta property="og:title" content="Tom Fattah — Artist" />
+    <meta property="og:description" content="Portfolio of Tom Fattah." />
+    <meta
+      property="og:image"
+      content="https://tomfattah.com/images/og-preview.jpg"
+    />
+    <meta property="og:url" content="https://tomfattah.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="robots" content="noai, noimageai" />
+    <meta name="gptbot" content="noindex, nofollow" />
+    <meta name="claudebot" content="noindex, nofollow" />
+    <meta name="googlebot" content="noai, noml" />
+    <meta name="Google-Extended" content="noindex" />
+    <meta name="applebot" content="noai" />
+    <meta name="Applebot-Extended" content="noindex" />
+    <meta name="bingbot" content="noai, noml" />
+    <meta name="perplexitybot" content="noindex" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-title" href="index.html">Tom Fattah</a>
+      <nav class="site-nav">
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <main class="wrap">
+      <!-- ===== EDIT: intro blurb ===== -->
+      <section class="hero">
+        <h1>Tom Fattah makes things.</h1>
+        <p>
+          A sentence or two about your work — medium, themes, where you're
+          based. Keep it short.
+        </p>
+      </section>
+
+      <h2 class="visually-hidden">Work</h2>
+
+      <!-- ===== EDIT: one <li> per category. Copy/paste to add more. ===== -->
+      <ul class="category-grid">
+        <li class="category-card">
+          <a href="section-1.html">
+            <img src="images/section-1/cover.jpg" alt="Section 1" />
+            <h3>Section 1</h3>
+            <p>Portraiture</p>
+          </a>
+        </li>
+
+        <li class="category-card">
+          <a href="section-2.html">
+            <img src="images/section-2/cover.jpg" alt="Section 2" />
+            <h3>Section 2</h3>
+            <p>Botanicals</p>
+          </a>
+        </li>
+
+        <li class="category-card">
+          <a href="section-3.html">
+            <img src="images/section-3/cover.jpg" alt="Section 3" />
+            <h3>Section 3</h3>
+            <p>Landscapes</p>
+          </a>
+        </li>
+      </ul>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year">2026</span> Tom Fattah. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

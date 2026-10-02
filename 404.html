@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page not found — Tom Fattah</title>
+    <meta name="description" content="That page doesn't exist." />
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-title" href="/">Tom Fattah</a>
+      <nav class="site-nav">
+        <a href="/about.html">About</a>
+      </nav>
+    </header>
+
+    <main class="wrap">
+      <div class="section-header">
+        <h1>Page not found</h1>
+        <p>
+          That page doesn't exist — it may have moved, or the link might be
+          wrong.
+        </p>
+      </div>
+
+      <p><a href="/">Back to the work</a></p>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year">2026</span> Tom Fattah. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
