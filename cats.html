@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tom Fattah - Cats</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="robots" content="noai, noimageai" />
+    <meta name="gptbot" content="noindex, nofollow" />
+    <meta name="claudebot" content="noindex, nofollow" />
+    <meta name="googlebot" content="noai, noml" />
+    <meta name="Google-Extended" content="noindex" />
+    <meta name="applebot" content="noai" />
+    <meta name="Applebot-Extended" content="noindex" />
+    <meta name="bingbot" content="noai, noml" />
+    <meta name="perplexitybot" content="noindex" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-title" href="index.html">Tom Fattah</a>
+      <nav class="site-nav">
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <main class="wrap">
+      <div class="section-header">
+        <h1>Cats</h1>
+        <p>
+          I have two cats named Mushroom (cow) and Noodle (tabby/white). I can't
+          help but make art of them. Sometimes I also do other cats.
+        </p>
+      </div>
+
+      <div class="gallery">
+        <a href="images/cats/cat1.jpg">
+          <img
+            src="images/cats/cat1.jpg"
+            alt="Digital drawing of Mushroom the cat"
+          />
+        </a>
+        <a href="images/cats/cat2.jpg">
+          <img
+            src="images/cats/cat2.jpg"
+            alt="Digital drawing of Noodle the cat"
+          />
+        </a>
+        <a href="images/cats/cat3.jpeg">
+          <img
+            src="images/cats/cat3.jpeg"
+            alt="Watercolor painting of Noodle the cat"
+          />
+        </a>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <ul class="social-links">
+        <li>
+          <a
+            href="https://instagram.com/tomfattah"
+            aria-label="Instagram"
+            rel="me noopener"
+            target="_blank"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <p>© <span id="year">2026</span> Your Name. All rights reserved.</p>
+    </footer>
+
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Image viewer"
+      hidden
+    >
+      <button class="lightbox-close" type="button" aria-label="Close">
+        &times;
+      </button>
+      <button class="lightbox-prev" type="button" aria-label="Previous image">
+        &lsaquo;
+      </button>
+      <button class="lightbox-next" type="button" aria-label="Next image">
+        &rsaquo;
+      </button>
+      <figure class="lightbox-figure">
+        <img class="lightbox-img" src="" alt="" />
+        <figcaption class="lightbox-caption"></figcaption>
+      </figure>
+    </div>
+
+    <script src="lightbox.js"></script>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
