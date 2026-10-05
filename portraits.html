@@ -3,24 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tom Fattah — Artist</title>
-    <meta name="description" content="Portfolio of Tom Fattah." />
+    <title>Tom Fattah - Portraits</title>
     <link rel="stylesheet" href="style.css" />
-
-    <link rel="icon" href="/favicon.ico" sizes="32x32" />
-    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-
-    <meta property="og:title" content="Tom Fattah — Artist" />
-    <meta property="og:description" content="Portfolio of Tom Fattah." />
-    <meta
-      property="og:image"
-      content="https://tomfattah.com/images/og-preview.jpg"
-    />
-    <meta property="og:url" content="https://tomfattah.com/" />
-    <meta name="twitter:card" content="summary_large_image" />
-
     <meta name="robots" content="noai, noimageai" />
     <meta name="gptbot" content="noindex, nofollow" />
     <meta name="claudebot" content="noindex, nofollow" />
@@ -40,38 +24,48 @@
     </header>
 
     <main class="wrap">
-      <!-- ===== EDIT: intro blurb ===== -->
-      <section class="hero">
-        <h1>Tom Fattah</h1>
-        <h2>Artist. Dad. Musician. Self-proclaimed Renaissance man.</h2>
-        <p>Inspired by nature. Based in Richmond, VA.</p>
-      </section>
+      <div class="section-header">
+        <h1>Potraits</h1>
+        <p>Digital portraits done with hatching</p>
+      </div>
 
-      <h2 class="visually-hidden">Work</h2>
-
-      <!-- ===== EDIT: one <li> per category. Copy/paste to add more. ===== -->
-      <ul class="category-grid">
-        <li class="category-card">
-          <a href="portraits.html">
-            <img src="images/portraits/portrait1.jpg" alt="Portraits" />
-            <h3>Portraits</h3>
-          </a>
-        </li>
-
-        <li class="category-card">
-          <a href="botanicals.html">
-            <img src="images/botanicals/botanical1.jpeg" alt="Botanicals" />
-            <h3>Botanicals</h3>
-          </a>
-        </li>
-
-        <li class="category-card">
-          <a href="cats.html">
-            <img src="images/cats/cat2.jpg" alt="Cats" />
-            <h3>Cats</h3>
-          </a>
-        </li>
-      </ul>
+      <div class="gallery">
+        <a href="images/portraits/multiPortrait1.jpg">
+        <img
+          src="images/portraits/multiPortrait1.jpg"
+          alt="Hatced drawing of multiple faces in different colors"
+        />
+      </a>
+      <a href="images/portraits/portrait1.jpg">
+        <img
+          src="images/portraits/portrait1.jpg"
+          alt="Monochrome portrait of a woman"
+        />
+      </a>
+      <a href="images/portraits/portrait2.jpg">
+        <img
+          src="images/portraits/portrait2.jpg"
+          alt="Monochrome portrait of an old man"
+        />
+      </a>
+      <a href="images/portraits/portrait3.jpg">
+        <img
+          src="images/portraits/portrait3.jpg"
+          alt="Monochrome portrait of a woman"
+        />
+      </a>
+      <a href="images/portraits/portrait4.jpg">
+        <img
+          src="images/portraits/portrait4.jpg"
+          alt="Monochrome portrait of a man with sunglasses"
+        />
+      </a>
+        <img
+          src="images/portraits/portrait5.jpg"
+          alt="Monochrome portrait of a man smoking"
+        />
+      </a>
+      </div>
     </main>
 
     <footer class="site-footer">
@@ -104,6 +98,31 @@
 
       <p>© <span id="year">2026</span> Your Name. All rights reserved.</p>
     </footer>
+
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Image viewer"
+      hidden
+    >
+      <button class="lightbox-close" type="button" aria-label="Close">
+        &times;
+      </button>
+      <button class="lightbox-prev" type="button" aria-label="Previous image">
+        &lsaquo;
+      </button>
+      <button class="lightbox-next" type="button" aria-label="Next image">
+        &rsaquo;
+      </button>
+      <figure class="lightbox-figure">
+        <img class="lightbox-img" src="" alt="" />
+        <figcaption class="lightbox-caption"></figcaption>
+      </figure>
+    </div>
+
+    <script src="lightbox.js"></script>
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
