@@ -19,3 +19,5 @@ Gemfile.lock
 
 # high res images only for local
 /hi-res-images
+
+**/.DS_Store
