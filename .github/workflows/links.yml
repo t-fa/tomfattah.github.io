@@ -22,6 +22,7 @@ jobs:
             --no-progress
             --verbose
             --root-dir .
+            --fallback-extensions html
             './**/*.html'
           fail: true
 
