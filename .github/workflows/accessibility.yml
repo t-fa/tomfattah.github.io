@@ -1,0 +1,40 @@
+name: Accessibility check
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  axe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: |
+          npm install -g http-server @axe-core/cli
+          npm install -g browser-driver-manager
+
+      - name: Install matching Chrome and ChromeDriver
+        run: |
+          script -q -e -c "npx browser-driver-manager install chrome" /dev/null
+
+      - name: Serve site locally
+        run: |
+          http-server . -p 8080 --silent &
+          sleep 3
+
+      - name: Run axe-core
+        run: |
+          axe http://localhost:8080/ \
+              http://localhost:8080/about \
+              http://localhost:8080/portraits \
+              http://localhost:8080/botanicals \
+              http://localhost:8080/cats \
+              --exit
