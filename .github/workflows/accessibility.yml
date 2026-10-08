@@ -19,6 +19,11 @@ jobs:
       - name: Install dependencies
         run: |
           npm install -g http-server @axe-core/cli
+          npm install -g browser-driver-manager
+
+      - name: Install matching Chrome and ChromeDriver
+        run: |
+          script -q -e -c "npx browser-driver-manager install chrome" /dev/null
 
       - name: Serve site locally
         run: |
