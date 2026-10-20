@@ -18,4 +18,13 @@ Disallow: /
 User-agent: Applebot-Extended
 Disallow: /
 
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: MistralAI-Training
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
 Sitemap: https://tomfattah.com/sitemap.xml
